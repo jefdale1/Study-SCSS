@@ -1,29 +1,27 @@
 @import "nullstyle.scss";
+
 body {
-    background-color: #fff;
+	background-color: #fff;
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 
-    ul {
-        display: flex;
-        flex-direction: row;
+	ul {
+		display: flex;
+		flex-direction: row;
 
-        li {
-            padding: 10px;
+		li {
+			padding: 10px;
 
-            a {
-                color: green;
-                &:hover {
-                    color:red;
-                }
-            }
+			a {
+				color: green;
 
-
-
-        }
-
-    }
+				&:hover {
+					color: red;
+				}
+			}
+		}
+	}
 }
