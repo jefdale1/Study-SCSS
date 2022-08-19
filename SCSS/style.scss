@@ -1,9 +1,29 @@
+@import "nullstyle.scss";
 body {
-    background-color: green;
-    .kakaha {
-        background-color:black;
-        max-width: 100%;
-        display: block;
-        align-items: center;
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            padding: 10px;
+
+            a {
+                color: green;
+                &:hover {
+                    color:red;
+                }
+            }
+
+
+
+        }
+
     }
 }
