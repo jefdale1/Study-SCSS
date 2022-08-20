@@ -341,3 +341,17 @@ nav ul li a:hover {
   display: flex;
   margin-top: 20px;
 }
+.social__links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 90px;
+}
+.social__icon {
+  font-size: 46px;
+  color: #cccccc;
+}
