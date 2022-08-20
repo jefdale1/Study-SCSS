@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700,italic,600italic,700italic&display=swap);
 * {
   padding: 0;
   margin: 0;
@@ -77,14 +78,16 @@ body {
   background-color: #fff;
 }
 
-nav {
+header {
+  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,8 +101,56 @@ nav ul li {
   padding: 10px;
 }
 nav ul li a {
-  color: green;
+  opacity: 0.69;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-left: 26px;
+}
+nav ul li a:not(:last-child) {
+  padding-right: 26px;
 }
 nav ul li a:hover {
-  color: red;
+  color: yellow;
+}
+
+.header {
+  width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  height: 27px;
+  width: 79px;
+  background: url(../img/logo_43.png) no-repeat;
+}
+
+.header__logo {
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 1100px;
 }

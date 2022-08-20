@@ -1,27 +1,62 @@
 @import "nullstyle.scss";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700,italic,600italic,700italic&display=swap);
 
 body {
 	background-color: #fff;
+	
 }
 
-nav {
+header {
+	background: black;
 	display: flex;
-	justify-content: flex-end;
-
+	justify-content: center;
+}
+nav {
 	ul {
 		display: flex;
 		flex-direction: row;
-
 		li {
 			padding: 10px;
-
 			a {
-				color: green;
+				opacity: 0.69;
+				font-family: "Open Sans";
+				font-size: 14px;
+				line-height: 1.2;
+				font-weight: 600;
+				color: #ffffff;
+				padding-top: 26px;
+				padding-bottom: 26px;
+				padding-left: 26px;
+				&:not(:last-child) {
+					padding-right: 26px;
+				}
 
 				&:hover {
-					color: red;
+					color: yellow;
 				}
 			}
 		}
 	}
+}
+.header {
+	width: 1100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	height: 27px;
+	width: 79px;
+	background: url(../img/logo_43.png) no-repeat;
+}
+.header__logo{
+	margin-top: 21px;
+	margin-bottom: 21px;
+}
+.main {
+	display: flex;
+	justify-content: center;
+}
+.container {
+	width: 1100px;
 }
