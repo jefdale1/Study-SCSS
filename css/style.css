@@ -191,6 +191,8 @@ nav ul li a:hover {
 }
 .wrapper__features {
   background-color: #f5f5f5;
+  border-top: solid 1px #c4c4c4;
+  height: 65vh;
 }
 
 .container {
@@ -286,7 +288,7 @@ nav ul li a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 316px;
+  height: 319px;
 }
 
 .form__input {
@@ -325,7 +327,6 @@ nav ul li a:hover {
 
 .social {
   background: white;
-  margin-top: 130px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,6 +337,7 @@ nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 5%;
 }
 .social__text {
   display: -webkit-box;
@@ -376,10 +378,52 @@ nav ul li a:hover {
 }
 
 .features {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.features__text {
+  max-width: 476px;
+}
+.features__container {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.features__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.features__tabs :first-child {
+  margin-top: 0;
+  background-color: #ff8b38;
+}
+.features__tab {
+  display: block;
+  background-color: #333333;
+  padding: 48px 37px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 2px;
+}
+.features__text {
+  margin-top: 25px;
+}
+.features__text-title {
+  padding-bottom: 15px;
 }
