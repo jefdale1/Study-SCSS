@@ -78,21 +78,33 @@ nav {
 
 .wrapper {
 	display: flex;
-	background-color: grey;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	&__main {
+		background-color: grey;
+		display: flex;
+		justify-content: space-between;
+		height: 93vh;
+	}
+	&__features {
+background-color: #f5f5f5;
+	}
 }
+
 .container {
 	width: 1100px;
 	display: flex;
 	justify-content: space-between;
+	&__main {
+		margin-top: 11%;
+	}
 }
 
 .main {
 	max-width: 47%;
 	&__logo {
-		margin-top: 110px;
+	
 	}
 	&__text {
 		margin-top: 31px;
@@ -130,7 +142,7 @@ nav {
 	}
 }
 .banner {
-	margin-top: 140px;
+	margin-top: 1%;
 	height: 370px;
 	width: 370px;
 	background: white;
@@ -202,6 +214,7 @@ nav {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	&__text {
 		display: flex;
 		flex-direction: column;
@@ -210,7 +223,8 @@ nav {
 	}
 	&__container {
 		display: flex;
-		margin-top: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	&__links {
 		width: 100%;
@@ -224,4 +238,8 @@ nav {
 		font-size: 46px;
 		color: #cccccc;
 	}
+}
+.features {
+	display: flex;
+	justify-content: space-between;
 }
