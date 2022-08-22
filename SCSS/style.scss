@@ -82,7 +82,7 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	&__main {
-		background-color: grey;
+		background: url(../img/backwrap.jpg) center 100% no-repeat;
 		display: flex;
 		justify-content: space-between;
 		height: 93vh;
@@ -268,6 +268,7 @@ nav {
 		font-weight: 700;
 		color: #ffffff;
 		margin-top: 2px;
+		border-radius: 3px;
 	}
 	&__text {
 		margin-top: 25px;
