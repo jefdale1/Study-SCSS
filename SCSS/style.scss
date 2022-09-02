@@ -90,8 +90,6 @@ nav {
 	&__features {
 		background-color: #f5f5f5;
 		border-top: solid 1px #c4c4c4;
-		height: 65vh;
-		
 	}
 }
 
@@ -106,7 +104,7 @@ nav {
 
 .main {
 	max-width: 47%;
-	
+
 	&__text {
 		margin-top: 31px;
 	}
@@ -254,10 +252,15 @@ nav {
 		display: flex;
 		flex-direction: column;
 		:first-child {
+			transition: 0.2s;
 			margin-top: 0;
 			background-color: #ff8b38;
+			&:hover {
+				background: rgb(255, 155, 81, 0.9);
+			}
 		}
 	}
+
 	&__tab {
 		display: block;
 		background-color: #333333;
@@ -269,6 +272,16 @@ nav {
 		color: #ffffff;
 		margin-top: 2px;
 		border-radius: 3px;
+		transition: 0.2s;
+		&:hover {
+			background-color: #ff8b38;
+		}
+	}
+
+	&__text-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 	&__text {
 		margin-top: 25px;
@@ -276,25 +289,41 @@ nav {
 	&__text-title {
 		padding-bottom: 15px;
 	}
+	&__button {
+		display: block;
+		align-self: flex-start;
+		background: #ff8b38;
+		max-width: 120px;
+		padding: 12px 23px;
+		font-family: "Open Sans";
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 600;
+		color: #ffffff;
+		border-radius: 3px;
+		box-shadow: 2px 9px 26px -1px rgba(34, 60, 80, 0.2);
+		text-decoration: none;
+		transition: 0.2s;
+		margin-top: 55px;
+		&:hover {
+			background: rgb(255, 155, 81, 0.9);
+		}
+	}
 }
 
 .wrapper__about {
-
 }
 .about {
-	&____container{
-
+	&__container {
 	}
 }
 .about1 {
-
 }
 .about2 {
 	width: 100%;
 
 	&__wrapper {
 		background: #f5f5f5;
-
 	}
 }
 

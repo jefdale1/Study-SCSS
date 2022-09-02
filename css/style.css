@@ -192,7 +192,6 @@ nav ul li a:hover {
 .wrapper__features {
   background-color: #f5f5f5;
   border-top: solid 1px #c4c4c4;
-  height: 65vh;
 }
 
 .container {
@@ -407,8 +406,13 @@ nav ul li a:hover {
           flex-direction: column;
 }
 .features__tabs :first-child {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   margin-top: 0;
   background-color: #ff8b38;
+}
+.features__tabs :first-child:hover {
+  background: rgba(255, 155, 81, 0.9);
 }
 .features__tab {
   display: block;
@@ -421,12 +425,52 @@ nav ul li a:hover {
   color: #ffffff;
   margin-top: 2px;
   border-radius: 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.features__tab:hover {
+  background-color: #ff8b38;
+}
+.features__text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .features__text {
   margin-top: 25px;
 }
 .features__text-title {
   padding-bottom: 15px;
+}
+.features__button {
+  display: block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background: #ff8b38;
+  max-width: 120px;
+  padding: 12px 23px;
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 9px 26px -1px rgba(34, 60, 80, 0.2);
+          box-shadow: 2px 9px 26px -1px rgba(34, 60, 80, 0.2);
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-top: 55px;
+}
+.features__button:hover {
+  background: rgba(255, 155, 81, 0.9);
 }
 
 .about2 {
