@@ -245,8 +245,23 @@ hr {
   line-height: 1.2;
   font-weight: 400;
 }
-.main__banner-input :first-child {
-  margin-top: 26px;
+.main__banner-input::-moz-placeholder {
+  color: #bdbdbd;
+}
+.main__banner-input:-ms-input-placeholder {
+  color: #bdbdbd;
+}
+.main__banner-input::placeholder {
+  color: #bdbdbd;
+}
+.main__banner-input:focus::-moz-placeholder {
+  color: transparent;
+}
+.main__banner-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.main__banner-input:focus::placeholder {
+  color: transparent;
 }
 .main__banner-button {
   display: block;

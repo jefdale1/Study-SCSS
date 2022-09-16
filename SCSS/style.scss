@@ -227,8 +227,11 @@ hr {
 		font-size: 14px;
 		line-height: 1.2;
 		font-weight: 400;
-		:first-child {
-			margin-top: 26px;
+		&::placeholder {
+			color: #bdbdbd;
+		}
+		&:focus::placeholder {
+			color: transparent;
 		}
 	}
 	&__banner-button {
