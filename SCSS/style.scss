@@ -486,6 +486,7 @@ body {
 		justify-content: space-between;
 	}
 	&__icon {
+		display: inline-block;
 		width: 70px;
 		height: 70px;
 		font-size: 32px;
@@ -498,20 +499,20 @@ body {
 		margin-bottom: 29px;
 		&::before {
 			position: absolute;
-			top: 18px;
+			top: 15px;
 			right: 21px;
 		}
 	}
 	&__icon2 {
 		&::before {
-			top: 17px;
-			right: 15px;
+			top: 14px;
+			right: 14px;
 		}
 	}
 	&__icon3 {
 		&::before {
-			top: 17px;
-			right: 20px;
+			top: 14px;
+			right: 19px;
 		}
 	}
 	&__paragraph {

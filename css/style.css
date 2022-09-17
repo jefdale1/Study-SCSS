@@ -519,6 +519,7 @@ body {
   justify-content: space-between;
 }
 .about2__icon {
+  display: inline-block;
   width: 70px;
   height: 70px;
   font-size: 32px;
@@ -532,16 +533,16 @@ body {
 }
 .about2__icon::before {
   position: absolute;
-  top: 18px;
+  top: 15px;
   right: 21px;
 }
 .about2__icon2::before {
-  top: 17px;
-  right: 15px;
+  top: 14px;
+  right: 14px;
 }
 .about2__icon3::before {
-  top: 17px;
-  right: 20px;
+  top: 14px;
+  right: 19px;
 }
 .about2__paragraph {
   max-width: 353px;
