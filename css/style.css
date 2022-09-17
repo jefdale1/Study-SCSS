@@ -306,7 +306,7 @@ body {
 
 .features {
   border-top: solid 1px #c4c4c4;
-  padding: 147px 0 116px;
+  padding: 147px 35px 116px;
 }
 .features__inner {
   width: 100%;
@@ -370,7 +370,7 @@ body {
 }
 
 .about {
-  padding: 104px 0;
+  padding: 104px 35px 104px 25px;
 }
 .about__inner {
   display: flex;
@@ -458,7 +458,7 @@ body {
 }
 
 .about1 {
-  padding: 66px 0;
+  padding: 66px 60px 66px 27px;
 }
 .about1__inner {
   display: flex;
@@ -485,7 +485,7 @@ body {
   position: absolute;
   top: 16px;
   left: 36px;
-  background-image: url(../img/about__img.jpg);
+  background-image: url(../img/about1__img.jpg);
   background-position: center center;
   background-size: cover;
   height: 303px;
