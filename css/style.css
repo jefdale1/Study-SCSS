@@ -93,14 +93,6 @@ body {
   background-color: #f5f5f5;
 }
 
-hr {
-  background: white;
-  height: 2px;
-  width: 64px;
-  box-sizing: content-box;
-  display: block;
-}
-
 .text-title {
   font-size: 20px;
   line-height: 1.2;
@@ -117,6 +109,7 @@ hr {
 .header {
   background: black;
   width: 100%;
+  padding: 0 30px;
 }
 .header__inner {
   display: flex;
@@ -175,6 +168,13 @@ hr {
   line-height: 1.2;
   font-weight: 400;
   color: #ffffff;
+}
+.main__hr {
+  background: white;
+  height: 2px;
+  width: 64px;
+  box-sizing: content-box;
+  display: block;
 }
 .main__description {
   margin-top: 34px;
@@ -278,8 +278,9 @@ hr {
 .social {
   background: white;
   width: 100%;
+  padding: 0 30px;
 }
-.social__container {
+.social__inner {
   display: flex;
   width: 100%;
   padding-top: 20px;
@@ -304,27 +305,20 @@ hr {
 }
 
 .features {
+  border-top: solid 1px #c4c4c4;
+  padding: 147px 0 116px;
+}
+.features__inner {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.features__section {
-  border-top: solid 1px #c4c4c4;
-  padding: 147px 0 116px;
-}
-.features__text {
-  max-width: 476px;
-}
-.features__container {
-  align-items: flex-end;
 }
 .features__tabs {
   display: flex;
   flex-direction: column;
 }
 .features__tabs :first-child {
-  transition: 0.2s;
   margin-top: 0;
   background-color: #ff8b38;
 }
@@ -346,16 +340,14 @@ hr {
 .features__tab:hover {
   background-color: #ff8b38;
 }
-.features__text-block {
+.features__description {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  max-width: 476px;
 }
-.features__text {
-  margin-top: 25px;
-}
-.features__text-title {
-  padding-bottom: 15px;
+.features__title {
+  margin-bottom: 40px;
 }
 .features__button {
   display: block;
@@ -375,4 +367,127 @@ hr {
 }
 .features__button:hover {
   background: rgba(255, 155, 81, 0.9);
+}
+
+.about {
+  padding: 104px 0;
+}
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.about__img-wrap {
+  margin-top: 7px;
+  background-image: url(../img/about__img-wrap.png);
+  background-position: center center;
+  background-size: cover;
+  height: 375px;
+  width: 526px;
+  position: relative;
+  right: 20px;
+}
+.about__img {
+  position: absolute;
+  top: 16px;
+  left: 36px;
+  background-image: url(../img/about__img.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 303px;
+  width: 453px;
+}
+.about__description {
+  max-width: 436px;
+  line-height: 20px;
+}
+.about__hr {
+  background: #ff8b38;
+  height: 2px;
+  width: 64px;
+  box-sizing: content-box;
+  display: block;
+  margin-bottom: 25px;
+}
+.about__title {
+  margin-bottom: 26px;
+}
+.about__text {
+  margin-bottom: 45px;
+}
+.about__upload {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 34px;
+}
+.about__upload-title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 5px;
+}
+.about__download {
+  display: flex;
+  gap: 30px;
+}
+.about__button {
+  position: relative;
+  background-color: transparent;
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-family: "Font Awesome";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ff8b38;
+  border: 2px #ff8b38 solid;
+  padding: 0 18px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.about__button:hover {
+  color: #ffffff;
+  background-color: #ff8b38;
+}
+.about__button-icon {
+  position: absolute;
+  top: 9px;
+  right: 7px;
+}
+
+.about1 {
+  padding: 66px 0;
+}
+.about1__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.about1__title {
+  margin-bottom: 25px;
+}
+.about1__description {
+  max-width: 475px;
+  padding-top: 34px;
+}
+.about1__img-wrap {
+  margin-top: 7px;
+  background-image: url(../img/about__img-wrap.png);
+  background-position: center center;
+  background-size: cover;
+  height: 375px;
+  width: 526px;
+  position: relative;
+  left: 59px;
+}
+.about1__img {
+  position: absolute;
+  top: 16px;
+  left: 36px;
+  background-image: url(../img/about__img.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 303px;
+  width: 453px;
 }/*# sourceMappingURL=style.css.map */

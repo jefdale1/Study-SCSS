@@ -78,13 +78,6 @@ body {
 .bg-grey {
 	background-color: #f5f5f5;
 }
-hr {
-	background: white;
-	height: 2px;
-	width: 64px;
-	box-sizing: content-box;
-	display: block;
-}
 .text-title {
 	font-size: 20px;
 	line-height: 1.2;
@@ -100,6 +93,7 @@ hr {
 .header {
 	background: black;
 	width: 100%;
+	padding: 0 30px;
 	&__inner {
 		display: flex;
 		align-items: center;
@@ -157,6 +151,13 @@ hr {
 		line-height: 1.2;
 		font-weight: 400;
 		color: #ffffff;
+	}
+	&__hr {
+		background: white;
+		height: 2px;
+		width: 64px;
+		box-sizing: content-box;
+		display: block;
 	}
 	&__description {
 		margin-top: 34px;
@@ -249,7 +250,8 @@ hr {
 .social {
 	background: white;
 	width: 100%;
-	&__container {
+	padding: 0 30px;
+	&__inner {
 		display: flex;
 		width: 100%;
 		padding-top: 20px;
@@ -274,25 +276,18 @@ hr {
 	}
 }
 .features {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	&__section {
-		border-top: solid 1px #c4c4c4;
-		padding: 147px 0 116px;
-	}
-	&__text {
-		max-width: 476px;
-	}
-	&__container {
-		align-items: flex-end;
+	border-top: solid 1px #c4c4c4;
+	padding: 147px 0 116px;
+	&__inner {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 	&__tabs {
 		display: flex;
 		flex-direction: column;
 		:first-child {
-			transition: 0.2s;
 			margin-top: 0;
 			background-color: #ff8b38;
 			&:hover {
@@ -300,12 +295,10 @@ hr {
 			}
 		}
 	}
-
 	&__tab {
 		display: block;
 		background-color: #333333;
 		padding: 48px 37px;
-
 		font-size: 15px;
 		line-height: 20px;
 		font-weight: 700;
@@ -317,17 +310,14 @@ hr {
 			background-color: #ff8b38;
 		}
 	}
-
-	&__text-block {
+	&__description {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
+		max-width: 476px;
 	}
-	&__text {
-		margin-top: 25px;
-	}
-	&__text-title {
-		padding-bottom: 15px;
+	&__title {
+		margin-bottom: 40px;
 	}
 	&__button {
 		display: block;
@@ -335,7 +325,6 @@ hr {
 		background: #ff8b38;
 		max-width: 120px;
 		padding: 12px 23px;
-
 		font-size: 15px;
 		line-height: 20px;
 		font-weight: 600;
@@ -348,5 +337,126 @@ hr {
 		&:hover {
 			background: rgb(255, 155, 81, 0.9);
 		}
+	}
+}
+.about {
+	padding: 104px 0;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+	}
+	&__img-wrap {
+		margin-top: 7px;
+		background-image: url(../img/about__img-wrap.png);
+		background-position: center center;
+		background-size: cover;
+		height: 375px;
+		width: 526px;
+		position: relative;
+		right: 20px;
+	}
+	&__img {
+		position: absolute;
+		top: 16px;
+		left: 36px;
+		background-image: url(../img/about__img.jpg);
+		background-position: center center;
+		background-size: cover;
+		height: 303px;
+		width: 453px;
+	}
+	&__description {
+		max-width: 436px;
+		line-height: 20px;
+	}
+	&__hr {
+		background: #ff8b38;
+		height: 2px;
+		width: 64px;
+		box-sizing: content-box;
+		display: block;
+		margin-bottom: 25px;
+	}
+	&__title {
+		margin-bottom: 26px;
+	}
+	&__text {
+		margin-bottom: 45px;
+	}
+	&__upload {
+		display: flex;
+		gap: 30px;
+		margin-bottom: 34px;
+	}
+	&__upload-title {
+		font-size: 14px;
+		line-height: 17px;
+		font-weight: 600;
+		color: #212121;
+		margin-bottom: 5px;
+	}
+	&__download {
+		display: flex;
+		gap: 30px;
+	}
+	&__button {
+		position: relative;
+		background-color: transparent;
+		display: block;
+		width: 40px;
+		height: 40px;
+		font-family: "Font Awesome";
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: #ff8b38;
+		border: 2px #ff8b38 solid;
+		padding: 0 18px;
+		border-radius: 20px;
+		transition: 0.2s;
+		&:hover {
+			color: #ffffff;
+			background-color: #ff8b38;
+		}
+	}
+	&__button-icon {
+		position: absolute;
+		top: 9px;
+		right: 7px;
+	}
+}
+.about1 {
+	padding: 66px 0;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		margin-bottom: 25px;
+	}
+	&__description {
+		max-width: 475px;
+		padding-top: 34px;
+	}
+	&__img-wrap {
+		margin-top: 7px;
+		background-image: url(../img/about__img-wrap.png);
+		background-position: center center;
+		background-size: cover;
+		height: 375px;
+		width: 526px;
+		position: relative;
+		left: 59px;
+	}
+	&__img {
+		position: absolute;
+		top: 16px;
+		left: 36px;
+		background-image: url(../img/about__img.jpg);
+		background-position: center center;
+		background-size: cover;
+		height: 303px;
+		width: 453px;
 	}
 }
