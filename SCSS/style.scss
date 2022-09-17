@@ -521,3 +521,37 @@ body {
 		margin-bottom: 25px;
 	}
 }
+.pricing {
+	padding: 108px 60px;
+
+&__inner {
+	text-align: center;
+}
+&__title {
+	color: #212121;
+}
+&__hr {
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+&__options-inner {
+	display: flex;
+	justify-content: space-between;
+}
+&__basic {
+	display: flex;
+	flex-direction: column;
+}
+&__cost {
+}
+&__features {
+}
+&__professional {
+	display: flex;
+	flex-direction: column;
+}
+&__enterprise {
+	display: flex;
+	flex-direction: column;
+}
+}

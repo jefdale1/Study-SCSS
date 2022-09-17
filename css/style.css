@@ -548,4 +548,34 @@ body {
 }
 .about2__paragraph-title {
   margin-bottom: 25px;
+}
+
+.pricing {
+  padding: 108px 60px;
+}
+.pricing__inner {
+  text-align: center;
+}
+.pricing__title {
+  color: #212121;
+}
+.pricing__hr {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.pricing__options-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing__basic {
+  display: flex;
+  flex-direction: column;
+}
+.pricing__professional {
+  display: flex;
+  flex-direction: column;
+}
+.pricing__enterprise {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
