@@ -336,6 +336,7 @@ body {
   margin-top: 2px;
   border-radius: 3px;
   transition: 0.2s;
+  min-width: 116px;
 }
 .features__tab:hover {
   background-color: #ff8b38;
@@ -490,4 +491,61 @@ body {
   background-size: cover;
   height: 303px;
   width: 453px;
+}
+
+.about2 {
+  padding: 108px 0;
+  text-align: center;
+}
+.about2__inner {
+  display: flex;
+  flex-direction: column;
+}
+.about2__title {
+  color: #212121;
+}
+.about2__hr {
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.about2__desc {
+  margin-bottom: 80px;
+}
+.about2__content {
+  text-align: center;
+}
+.about2__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about2__icon {
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ff8b38;
+  border: 2px #ff8b38 solid;
+  border-radius: 35px;
+  position: relative;
+  margin-bottom: 29px;
+}
+.about2__icon::before {
+  position: absolute;
+  top: 18px;
+  right: 21px;
+}
+.about2__icon2::before {
+  top: 17px;
+  right: 15px;
+}
+.about2__icon3::before {
+  top: 17px;
+  right: 20px;
+}
+.about2__paragraph {
+  max-width: 353px;
+}
+.about2__paragraph-title {
+  margin-bottom: 25px;
 }/*# sourceMappingURL=style.css.map */

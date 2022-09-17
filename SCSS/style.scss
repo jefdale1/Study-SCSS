@@ -306,6 +306,7 @@ body {
 		margin-top: 2px;
 		border-radius: 3px;
 		transition: 0.2s;
+		min-width: 116px;
 		&:hover {
 			background-color: #ff8b38;
 		}
@@ -458,5 +459,65 @@ body {
 		background-size: cover;
 		height: 303px;
 		width: 453px;
+	}
+}
+.about2 {
+	padding: 108px 0;
+	text-align: center;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		color: #212121;
+	}
+	&__hr {
+		margin: 0 auto;
+		margin-bottom: 25px;
+	}
+	&__desc {
+		margin-bottom: 80px;
+	}
+	&__content {
+		text-align: center;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__icon {
+		width: 70px;
+		height: 70px;
+		font-size: 32px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: #ff8b38;
+		border: 2px #ff8b38 solid;
+		border-radius: 35px;
+		position: relative;
+		margin-bottom: 29px;
+		&::before {
+			position: absolute;
+			top: 18px;
+			right: 21px;
+		}
+	}
+	&__icon2 {
+		&::before {
+			top: 17px;
+			right: 15px;
+		}
+	}
+	&__icon3 {
+		&::before {
+			top: 17px;
+			right: 20px;
+		}
+	}
+	&__paragraph {
+		max-width: 353px;
+	}
+	&__paragraph-title {
+		margin-bottom: 25px;
 	}
 }
