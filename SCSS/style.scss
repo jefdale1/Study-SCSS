@@ -744,8 +744,6 @@ body {
 		color: #86878b;
 		margin-bottom: 80px;
 	}
-	&__form {
-	}
 	&__inputs {
 		display: flex;
 		justify-content: space-between;
@@ -770,12 +768,6 @@ body {
 		&:focus::placeholder {
 			color: transparent;
 		}
-	}
-	&__input-name {
-	}
-	&__input-email {
-	}
-	&__input-subject {
 	}
 	&__input-message {
 		height: inherit;
