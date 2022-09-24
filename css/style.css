@@ -564,13 +564,79 @@ body {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.pricing__desc {
+  line-height: 20px;
+  font-weight: 400;
+  color: #86878b;
+  margin-bottom: 81px;
+}
+.pricing__options {
+  width: 343px;
+  justify-content: flex-end;
+}
+.pricing__options-title {
+  font-size: 20px;
+  line-height: 59px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #333333;
+  margin-bottom: 1px;
+}
 .pricing__options-inner {
   display: flex;
   justify-content: space-between;
 }
+.pricing__options-hr {
+  display: block;
+  height: 5px;
+  width: 343px;
+  background-color: #ff8b38;
+}
+.pricing__options-mostpop {
+  line-height: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #ff8b38;
+}
 .pricing__basic {
   display: flex;
   flex-direction: column;
+}
+.pricing__cost {
+  display: flex;
+  flex-direction: column;
+}
+.pricing__cost-desc {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 51px;
+  font-weight: 600;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.4745098039);
+  background-color: #333333;
+}
+.pricing__cost-span {
+  background-color: #333333;
+  font-family: Raleway;
+  font-size: 94px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-top: 42px;
+  padding-bottom: 14px;
+}
+.pricing__cost-span::before {
+  content: "$";
+  font-size: 35px;
+}
+.pricing__features {
+  background-color: #ffffff;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #86878b;
+  line-height: 40px;
 }
 .pricing__professional {
   display: flex;
